@@ -9,6 +9,7 @@ public class Person {
         this.age = age;
     }
 
+    @Deprecated
     public Boolean nameMatches(String name){
         return this.name.equalsIgnoreCase(name);
     }
