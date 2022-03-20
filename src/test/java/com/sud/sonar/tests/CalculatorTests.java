@@ -17,4 +17,11 @@ public class CalculatorTests {
         public void addTestFail(){
         Assert.assertEquals(new Calculator().add(2,3), 6 , "Intentional failure");
     }
+
+    @Test
+    public void subTest(){
+        Calculator calculator = new Calculator();
+        Integer sub = calculator.sub(2,1);
+        Assert.assertEquals(sub, 1, "Sub 1 from 2");
+    }
 }
